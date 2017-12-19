@@ -1,0 +1,511 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+@import url("fonts.css");
+
+
+body: {
+    font-family: sans-serif;
+}
+/* navigation bar styles */
+
+header {
+    text-align: center;
+}
+
+#logo {
+    float: left;
+    height:  80%;
+    padding: 5px;
+}
+
+#logo p {
+    float: right;
+    line-height: 3vh;
+    padding: 5px;
+}
+
+nav {
+    height: 5vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    color: white;
+    z-index: 100;
+}
+
+nav .gray {
+    display: none;
+}
+
+#blank {
+    height: 1px;
+}
+
+.sticky {
+    position: fixed;
+    top: px;
+    width: 100%;
+    padding-right: 5%;
+    background-color: white;
+  box-shadow: 0 3px 76px -15px black;
+    animation: fadein 1s 1;
+}
+
+.sticky li {
+    color: black;
+}
+
+.sticky .gray{
+    display: block;
+    color: gray;
+}
+
+.sticky #logo .gray {
+    color: gray;
+    float: left;
+}
+
+.sticky .white {
+    display: none;
+}
+
+.content {
+    padding: 6px;
+}
+
+.sticky + .content {
+    padding-top: 10px;
+}
+
+ul {
+    width: 50%;
+    line-height: 5vh;
+    float: right;
+    background-color: transparent;
+    color: white;
+}
+
+nav ul li {
+    width: 20%;
+    float: right;
+    list-style: none;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(200,200,200,0.6);
+    letter-spacing: 1px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    color: white;
+    transition-duration: .7s;
+}
+
+.sticky ul li:hover {
+    background-color: rgba(2,2,2,.6);
+    color: white;
+}
+
+nav ul li #prod {
+    display: none;
+}
+
+nav ul li:hover #prod {
+    display: block;
+}
+
+#prod {
+    position: relative;
+    width: 100%;
+}
+
+
+#parallax {
+    background-image: url('Images/nadine-shaabana-313161.jpg');
+
+    height: 85vh;
+    width: 100%;
+    margin: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mainpage {
+    height: 20vh;
+}
+
+#mainpage h2 {
+    font-weight: 800;
+    font-family: 'Dekar';
+}
+
+#parallax-banner {
+    position: relative;
+    text-align: center;
+    align-content: center;
+    color: white;
+    width: 100%;
+    animation: floatup 3s 1;
+}
+
+#moveup {
+    height: 25vh;
+}
+
+#parallax-banner button {
+    padding: 0px;
+    background-color: #373737;
+    width: 80%;
+    height: 5vh;
+    margin: auto;
+    margin: 2px;
+    border: solid 1px white;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: purple;
+    font-weight: 400;
+    z-index: 500;
+    animation: floatup 3s 1;
+    animation: fadein 3s 1;
+}
+
+#parallax-banner button a {
+    width: 100%;
+    height: 100%;
+    line-height: 5vh;
+    color: white;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 2px;
+}
+
+#dux a:hover {
+    background-color: white;
+    color: #373737;
+}
+
+.lux {
+    mix-blend-mode: screen;
+    background: linear-gradient(135deg, #000000 0%,#000000 25%,#1A2980 50%,#1A2980 75%,#26D0CE 100%);
+  transition: .5s all;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: 400% 400%;
+    background-color: #373737;
+    cursor: pointer;
+}
+
+#lux a:hover {
+    background-position: 100% 100%;
+}
+
+#parallax-banner h2 {
+    position: relative;
+    animation: float-delay 4s 1;
+    animation: fadein 6s 1;
+}
+
+#anih {
+    position: relative;
+    animation: fadein 3s 1;
+    animation: float-delay 2s 1;
+}
+
+#anih h2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+    animation: float-delay 2s 1;
+    animation: fadein 3s 1;
+}
+
+#mainpage {
+    animation: fadein 8s 1;
+}
+
+#animate-wrapper {
+    width: 20%;
+    margin-left: 8%;
+}
+
+@keyframes floatup {
+    0%   {top: 8vh;}
+    100% {top: 0vh;}
+}
+
+@keyframes float-delay {
+    0%   {top: 10vh;}
+    100% {top: 0vh;}
+    
+}
+
+@keyframes fadein {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* main content */
+
+#m-content {
+    position: relative;
+    width: 100%;
+    height: 1vh;
+    text-align: center;
+    color: gray;
+}
+
+#mainpage h2 {
+    line-height: 10vh;
+    height: 6vh;
+    text-align: center;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#mc-butt {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 1%;
+    cursor: pointer;
+}
+
+#Overview {
+    height: 45vh;
+    padding-bottom: 8vh;
+    border-bottom: 1px solid #515151;
+    width: 80%;
+    margin: auto;
+}
+
+#Overview .info {
+    height: 16vh;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 0;
+    
+}
+
+#Overview h3 {
+    width: 100%;
+    color: #515151;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Melbourne';
+    padding-top: 4vh;
+    padding-bottom: 2.5vh;
+}
+
+.toplist {
+    width: 33.333%;
+    height: 65%;
+    float: left;
+}
+
+.toplist p {
+    height: 5vh;
+    padding: 7%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'HeroLight';
+}
+
+.learn {
+    padding-top: 5%;
+}
+
+.learn a {
+    font-family: 'DekarLight';
+    font-weight: 900;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: black;
+}
+
+.learn a:hover {
+    color: #26D0CE;
+}
+
+#bottom {
+    width: 100%;
+    bottom: 0px;
+    color: #515151;
+    float: right;
+    text-align: right;
+}
+
+#content {
+    height: 70vh;
+    width: 80%;
+    margin: auto;
+    padding-top: 5vh;
+    border-top: 1px solid #515151;
+    border-bottom: 1px solid #515151;
+}
+
+#alogo {
+    width: 50%;
+    float: left;
+}
+
+#ai-info {
+    width: 50%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+#ai-info h3 {
+    text-transform: uppercase;
+    font-family: 'DekarLight';
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    padding-bottom: 2vh;
+}
+#ai-info p {
+    font-size: 1.3em;
+    font-family: 'Melbourne';
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: justify;
+    padding-bottom: 3vh;
+    line-height: 2.5vh;
+}
+
+#pricing {
+    width: 80%;
+    margin: auto;
+    padding-top: 5vh;
+    height: 45vh;
+}
+
+#pricing h3 {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-family: 'Dekar';
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+    background-color: #515151;
+    color: white;
+    margin-bottom: 1vh;
+}
+
+#buttonPrice button {
+    text-align: center;
+    width: 13%;
+    position: relative;
+    height: 3vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+#buttonPrice {
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 100%;
+    text-align: left;
+}
+
+
+#buttonPrice button:hover {
+    background-color: #515151;
+    color: white;
+    cursor: pointer;
+}
+
+.plan  {
+    width: 33.33333%;
+    float: right;
+    padding-top: 5vh;
+    text-align: center
+}
+
+.plan p {
+    text-align: justify;
+    height: 5vh;
+    padding: 5%;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #515151;
+}
+
+.plan .plan-button {
+    margin-top: 1vh;
+    width: 10vw;
+    height: 3vh;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+.plan .plan-button:hover {
+    background-color: #515151;
+    color: white;
+    cursor: pointer;
+}
+
+#b-parallax {    
+    background-image: url('Images/brandi-redd-122054.jpg');
+
+    height: 25vh;
+    width: 100%;
+    margin: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#c-parallax {    
+    background-image: url('Images/helloquence-61189.jpg');
+
+    height: 15vh;
+    width: 100%;
+    margin: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+window.scroll{                 /* Scroll to top  on start */
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth' 
+};

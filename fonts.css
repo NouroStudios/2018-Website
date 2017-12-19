@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Dekar';
+  src:  url('Fonts/Dekar.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'DekarLight';
+  src:  url('Fonts/DekarLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Hero';
+  src:  url('Fonts/Hero.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'HeroLight';
+  src:  url('Fonts/DekarLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Lato-Hairline';
+  src:  url('Fonts/Lato-Hairline.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Thin';
+  src:  url('Fonts/Lato-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Melbourne';
+  src:  url('Fonts/Melbourne_light.otf') format('opentype');
+}

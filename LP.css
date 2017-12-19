@@ -1,0 +1,74 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#global {
+    background-image: url('Images/janko-seboek-17854.jpg');
+    /* Janko is really cool */
+    height: 100vh;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#global #content #logo {
+    width: 100%;
+}
+
+.xeno {
+    padding: ;
+    background-color: rgba(250,250,250,0.6);
+    width: 95%;
+    height: 5vh;
+    margin: auto;
+    margin: 2px;
+    border: solid 1px #515151;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: #515151;
+    font-weight: 400;
+    z-index: 500;
+    animation: floatup 3s 1;
+    animation: fadein 3s 1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.xeno:hover {
+    background-color: #515151;
+    color: white;
+    cursor: pointer;
+}
+
+#butons {
+    padding: 25%;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#bx:hover {
+    background-color: white;
+    color: #515151;
+}
+#content {
+    width: 45%;
+    text-align: center;
+    margin:auto;
+    padding-top: 10%;
+}
+
+@keyframes floatup {
+    0%   {top: 50px;}
+    100% {top: 0px;}
+}
+
+@keyframes fadein {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
